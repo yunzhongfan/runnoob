@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form action="/servletTes" method="post">
+<form action="/helloBoy.do" method="post">
 <input type = "text" id ="apple" name ="apple"/>
 <input type="submit" value="提交" />
 </form>
