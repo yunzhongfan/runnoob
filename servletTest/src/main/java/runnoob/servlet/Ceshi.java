@@ -1,33 +1,23 @@
 package runnoob.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.Iterator;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.xml.ws.WebServiceRef;
-
-
 
 /**
- * 
- * servletMethod测试类
- * Servlet implementation class servletTest
+ * Servlet implementation class Ceshi
  */
-@WebServlet("/servletTest")
-public class servletTest extends HttpServlet {
+@WebServlet("/Ceshi")
+public class Ceshi extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public servletTest() {
+    public Ceshi() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -37,7 +27,7 @@ public class servletTest extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		this.doPost(request, response);
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
@@ -45,16 +35,7 @@ public class servletTest extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-       Enumeration  hearders =  request.getHeaderNames();
-       ArrayList<String> list = new ArrayList<String>();
-       for(;hearders.hasMoreElements();){
-           String thisName=hearders.nextElement().toString();
-           System.out.println(thisName);
-           list.add(thisName);
-       }
-       response.sendRedirect("/pages/success.jsp");
-       
-       
+		doGet(request, response);
 	}
 
 }

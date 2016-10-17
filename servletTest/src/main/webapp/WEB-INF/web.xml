@@ -5,15 +5,6 @@
     <welcome-file>index.htm</welcome-file>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
-  <filter>
-    <display-name>filterTest</display-name>
-    <filter-name>filterTest</filter-name>
-    <filter-class>runnoob.filter.filterTest</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>filterTest</filter-name>
-    <url-pattern>/*.do</url-pattern>
-  </filter-mapping>
   <servlet>
     <description></description>
     <display-name>servletTest</display-name>
@@ -22,6 +13,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>servletTest</servlet-name>
-    <url-pattern>/helloBoy.do</url-pattern>
+    <url-pattern>/helloBoy</url-pattern>
   </servlet-mapping>
 </web-app>

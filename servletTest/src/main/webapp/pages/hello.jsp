@@ -8,10 +8,14 @@
 </head>
 <body>
 
-<form action="/helloBoy.do" method="post">
+<form action="/helloBoy" method="post">
 <input type = "text" id ="apple" name ="apple"/>
 <input type="submit" value="提交" />
 </form>
-
+<form action="/servletMthodTest" method="post">
+	<input name="username"  id="username1" type="text"/>
+	<input name="password" id= "password" type="password"/>
+	<input type="button" value="提交"/>
+</form>
 </body>
 </html>
