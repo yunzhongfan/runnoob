@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
   <welcome-file-list>
@@ -15,4 +16,23 @@
     <servlet-name>servletTest</servlet-name>
     <url-pattern>/helloBoy</url-pattern>
   </servlet-mapping>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>servletTest</display-name>
+    <servlet-name>servletTest</servlet-name>
+    <servlet-class>runnoob.servlet.servletTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletTest</servlet-name>
+    <url-pattern>/helloBoy</url-pattern>
+  </servlet-mapping>
+>>>>>>> refs/remotes/origin/master
 </web-app>
