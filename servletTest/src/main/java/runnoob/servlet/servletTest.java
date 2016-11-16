@@ -7,15 +7,20 @@ import java.util.Enumeration;
 import java.util.Iterator;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.xml.ws.WebServiceRef;
 
 
 
 /**
+ * 
+ * servletMethod测试类
  * Servlet implementation class servletTest
  */
+@WebServlet("/servletTest")
 public class servletTest extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
