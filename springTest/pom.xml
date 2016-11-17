@@ -54,6 +54,13 @@
 			<artifactId>spring-aop</artifactId>
 			<version>4.3.3.RELEASE</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+
 		<!-- spring 测试类所需要的类 -->
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
 		<dependency>
@@ -61,6 +68,15 @@
 			<artifactId>spring-test</artifactId>
 			<version>4.3.1.RELEASE</version>
 		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring  contextloaderLister监听类所在的包 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring</artifactId>
+			<version>2.5.6</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>
@@ -69,19 +85,13 @@
 				<artifactId>tomcat-maven-plugin</artifactId>
 				<version>1.1</version>
 				<configuration>
-					<path>/springTest</path>
+					<path>/spring</path>
 					<port>8080</port>
 					<uriEncoding>UTF-8</uriEncoding>
 					<url>http://localhost:8080/</url>
 					<server>tomcat7</server>
 				</configuration>
 			</plugin>
-
-
 		</plugins>
-
-
-
-
 	</build>
 </project>
